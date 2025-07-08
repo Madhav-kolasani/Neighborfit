@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeighborFit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NeighborFit</h1>
+        <p>Find your perfect neighborhood</p>
+        
+        <form id="form">
+            <label>Budget ($):</label>
+            <input type="number" id="budget" value="2000" required>
+            
+            <label>Lifestyle:</label>
+            <select id="lifestyle" required>
+                <option value="">Select</option>
+                <option value="urban">Urban</option>
+                <option value="suburban">Suburban</option>
+                <option value="student">Student</option>
+            </select>
+            
+            <label>Transportation:</label>
+            <select id="transport" required>
+                <option value="">Select</option>
+                <option value="car">Car</option>
+                <option value="public">Public Transit</option>
+                <option value="bike">Bike/Walk</option>
+            </select>
+            
+            <br><br>
+            <button type="submit">Find Neighborhoods</button>
+        </form>
+        
+        <div id="results" style="display:none;">
+            <h2>Your Matches</h2>
+            <div id="list"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
